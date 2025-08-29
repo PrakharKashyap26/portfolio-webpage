@@ -8,10 +8,9 @@
 }
 
 body {
-  /*background: linear-gradient(135deg, #fdfdfd, #f7f9fb);*/
+  background: linear-gradient(135deg, #f9fafb, #e3f2fd, #e0f2fe);
   color: #222;
   line-height: 1.6;
-  background-image: linear-gradient(to right, #ff0000, #0000ff);
 }
 
 a {
