@@ -8,9 +8,10 @@
 }
 
 body {
-  background: linear-gradient(135deg, #fdfdfd, #f7f9fb);
+  /*background: linear-gradient(135deg, #fdfdfd, #f7f9fb);*/
   color: #222;
   line-height: 1.6;
+  background-image: linear-gradient(to right, #ff0000, #0000ff);
 }
 
 a {
@@ -229,8 +230,5 @@ nav ul li a:hover {
 
   .menu-toggle {
     display: block;
-  }
-  .element {
-    background-image: linear-gradient(to right, #ff0000, #0000ff);
   }
 }
