@@ -230,4 +230,7 @@ nav ul li a:hover {
   .menu-toggle {
     display: block;
   }
+  .element {
+    background-image: linear-gradient(to right, #ff0000, #0000ff);
+  }
 }
