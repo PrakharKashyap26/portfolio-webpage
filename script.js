@@ -34,6 +34,41 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// --- Dark / Light Mode Toggle ---
+const themeToggle = document.querySelector('.theme-toggle');
+const themeIcon = themeToggle.querySelector('i');
+
+function setTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  localStorage.setItem('theme', theme);
+  if (theme === 'light') {
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-sun');
+    themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+  } else {
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.add('fa-moon');
+    themeToggle.setAttribute('aria-label', 'Switch to light mode');
+  }
+}
+
+function loadTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    setTheme(savedTheme);
+  } else {
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setTheme(systemPrefersDark ? 'dark' : 'light');
+  }
+}
+
+themeToggle.addEventListener('click', () => {
+  const currentTheme = document.documentElement.dataset.theme || 'dark';
+  setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+});
+
+loadTheme();
+
 // --- Typewriter Effect ---
 const typewriterElement = document.getElementById('typewriter');
 const words = ['Computer Science Undergraduate', 'Backend Developer', 'System Architect', 'Tech Enthusiast'];
