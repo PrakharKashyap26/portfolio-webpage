@@ -69,47 +69,6 @@ themeToggle.addEventListener('click', () => {
 
 loadTheme();
 
-// --- Typewriter Effect ---
-const typewriterElement = document.getElementById('typewriter');
-const words = ['Computer Science Undergraduate', 'Backend Developer', 'System Architect', 'Tech Enthusiast'];
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-let typeSpeed = 100;
-
-function typeWriter() {
-  const currentWord = words[wordIndex];
-  
-  if (isDeleting) {
-    // Remove char
-    typewriterElement.textContent = currentWord.substring(0, charIndex - 1);
-    charIndex--;
-    typeSpeed = 50; // Delete faster
-  } else {
-    // Add char
-    typewriterElement.textContent = currentWord.substring(0, charIndex + 1);
-    charIndex++;
-    typeSpeed = 100;
-  }
-
-  // If word is completely typed
-  if (!isDeleting && charIndex === currentWord.length) {
-    isDeleting = true;
-    typeSpeed = 2000; // Pause at the end
-  } 
-  // If word is completely deleted
-  else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    wordIndex = (wordIndex + 1) % words.length;
-    typeSpeed = 500; // Pause before typing new word
-  }
-
-  setTimeout(typeWriter, typeSpeed);
-}
-
-// Start typewriter effect after a short delay
-setTimeout(typeWriter, 1000);
-
 // --- Scroll Animation (Intersection Observer) ---
 const fadeElements = document.querySelectorAll('.fade-up');
 
