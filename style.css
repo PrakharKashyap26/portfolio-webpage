@@ -31,8 +31,7 @@ nav {
   position: fixed;
   width: 100%;
   padding: 1.2rem 2rem;
-  background: rgba(15,17,21,0.85);
-  backdrop-filter: blur(10px);
+  background: rgba(15,17,21,0.9);
   border-bottom: 1px solid var(--border);
 }
 
@@ -41,10 +40,6 @@ nav {
   margin: auto;
   display: flex;
   justify-content: space-between;
-}
-
-.logo {
-  font-family: var(--font-serif);
 }
 
 .nav-links {
@@ -79,13 +74,12 @@ nav {
 
 .hero-text h1 {
   font-family: var(--font-serif);
-  font-size: 3.6rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
 }
 
 .hero-text p {
   color: var(--muted);
-  max-width: 500px;
   margin-bottom: 2rem;
 }
 
@@ -95,15 +89,10 @@ nav {
   margin-bottom: 1rem;
 }
 
-.hero-btns {
-  display: flex;
-  gap: 1rem;
-}
-
 .btn {
-  padding: 0.7rem 1.6rem;
+  padding: 0.6rem 1.5rem;
   border-radius: 6px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .primary {
@@ -135,17 +124,22 @@ nav {
   filter: contrast(110%) brightness(92%);
 }
 
-/* PROJECTS */
-#projects {
+/* SECTIONS */
+section {
   padding: 6rem 2rem;
   max-width: 1000px;
   margin: auto;
 }
 
+h2 {
+  margin-bottom: 2rem;
+  font-family: var(--font-serif);
+}
+
+/* PROJECTS */
 .projects {
   display: grid;
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .card {
@@ -155,38 +149,22 @@ nav {
   background: var(--bg-soft);
 }
 
-.card h3 {
-  margin-bottom: 0.5rem;
-}
-
 .card p {
   color: var(--muted);
-  margin-bottom: 1rem;
+  margin: 0.5rem 0 1rem;
 }
 
-/* ABOUT */
-#about {
-  padding: 6rem 2rem;
-  max-width: 800px;
-  margin: auto;
-}
-
-#about p {
-  margin-bottom: 1rem;
-  color: var(--muted);
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  gap: 2rem;
 }
 
 /* CONTACT */
-#contact {
-  padding: 6rem 2rem;
-  text-align: center;
-}
-
 .contact-links {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 1rem;
 }
 
 /* FOOTER */

@@ -1,5 +1,3 @@
-// smooth scroll highlight (minimal, no fluff)
-
 const links = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
