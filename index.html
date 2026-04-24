@@ -4,9 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prakhar Kashyap | Portfolio</title>
+  <meta name="description" content="Portfolio of Prakhar Kashyap, Computer Science Undergraduate and Backend Developer.">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/2d3f2e6a22.js" crossorigin="anonymous"></script>
@@ -15,97 +18,169 @@
 </head>
 <body>
 
+  <!-- Background Orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
   <!-- ===== Navbar ===== -->
-  <nav>
-    <div class="logo">Prakhar Kashyap</div>
-    <div class="menu-toggle">&#9776;</div>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#interests">Interests</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">Prakhar<span class="accent">.</span></div>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- ===== Hero ===== -->
-  <section id="hero">
-    <div class="hero-text">
-      <h1>Prakhar Kashyap</h1>
-      <h3>Computer Science Undergraduate · Backend Developer</h3>
-      <p>
-        I build reliable backend systems, write thoughtful stories,
-        and enjoy engineering things that last.
-      </p>
-      <a href="#contact" class="btn">Get in Touch</a>
+  <section id="hero" class="section">
+    <div class="hero-content fade-up">
+      <div class="hero-text">
+        <div class="greeting">Hello, I am</div>
+        <h1>Prakhar Kashyap</h1>
+        <h3 class="typewriter-container"><span id="typewriter"></span><span class="cursor"></span></h3>
+        <p>
+          I build reliable backend systems, write thoughtful stories,
+          and enjoy engineering things that last. Focused on clarity, precision, and performance.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn primary-btn">Get in Touch <i class="fas fa-arrow-right"></i></a>
+          <a href="#projects" class="btn secondary-btn">View Work</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-container">
+          <img src="prakhar.jpg" alt="Prakhar Kashyap" class="hero-image">
+          <div class="image-glow"></div>
+        </div>
+      </div>
     </div>
-
-    <div class="hero-image">
-      <img src="prakhar.jpg" alt="Prakhar Kashyap">
+    <div class="scroll-indicator">
+      <a href="#about"><i class="fas fa-chevron-down"></i></a>
     </div>
   </section>
 
   <!-- ===== About ===== -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am an engineering student focused on backend development and
-      system-level programming. My journey started early with Python,
-      driven by curiosity and experimentation on a shared family computer.
-      Today, I aim to build scalable software that solves real problems
-      with clarity and precision.
-    </p>
+  <section id="about" class="section">
+    <div class="section-header fade-up">
+      <h2 class="section-title">About Me</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="about-content fade-up">
+      <div class="about-text glass-card">
+        <p>
+          I am an engineering student focused on backend development and
+          system-level programming. My journey started early with Python,
+          driven by curiosity and experimentation on a shared family computer.
+        </p>
+        <p>
+          Today, I aim to build scalable software that solves real problems
+          with clarity and precision. I believe in writing code that is not just functional, but clean, maintainable, and highly performant.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- ===== Projects ===== -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
+  <section id="projects" class="section">
+    <div class="section-header fade-up">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card glass-card fade-up">
+        <div class="project-icon"><i class="fas fa-robot"></i></div>
         <h3>Prep-Buddy</h3>
-        <p>
+        <p class="project-desc">
           An AI-powered study assistant written in Python. Helps students
           discover quality courses, practice regularly, and receive guided
           AI feedback in a clean workflow.
         </p>
-        <a class="btn-sm" target="_blank" href="https://github.com/prakharkashyap26/Prep_Buddy">
-          <i class="fab fa-github"></i> GitHub
-        </a>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>AI</span>
+        </div>
+        <div class="project-links">
+          <a target="_blank" href="https://github.com/prakharkashyap26/Prep_Buddy" class="project-link">
+            <i class="fab fa-github"></i> Source
+          </a>
+        </div>
       </div>
 
-      <div class="project">
+      <div class="project-card glass-card fade-up" style="transition-delay: 0.1s;">
+        <div class="project-icon"><i class="fas fa-search"></i></div>
         <h3>TexWebSearch</h3>
-        <p>
+        <p class="project-desc">
           A lightweight CLI-based AI search engine using Google Gemini,
           optimized for low-end systems with a focus on speed and clarity.
         </p>
-        <a class="btn-sm" target="_blank" href="https://github.com/prakharkashyap26/textWebSearch">
-          <i class="fab fa-github"></i> GitHub
-        </a>
+        <div class="project-tech">
+          <span>CLI</span>
+          <span>Google Gemini</span>
+        </div>
+        <div class="project-links">
+          <a target="_blank" href="https://github.com/prakharkashyap26/textWebSearch" class="project-link">
+            <i class="fab fa-github"></i> Source
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===== Skills ===== -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span class="skill">Python</span>
-      <span class="skill">C++</span>
-      <span class="skill">Linux</span>
-      <span class="skill">Git</span>
-      <span class="skill">MySQL</span>
-      <span class="skill">HTML / CSS</span>
+  <section id="skills" class="section">
+    <div class="section-header fade-up">
+      <h2 class="section-title">Technical Arsenal</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="skills-container glass-card fade-up">
+      <div class="skills-grid">
+        <div class="skill-item">
+          <i class="fab fa-python"></i>
+          <span>Python</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-code"></i>
+          <span>C++</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-linux"></i>
+          <span>Linux</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-git-alt"></i>
+          <span>Git</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-database"></i>
+          <span>MySQL</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-html5"></i>
+          <span>HTML / CSS</span>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ===== Interests ===== -->
-  <section id="interests">
-    <h2>Beyond Code</h2>
-    <div class="interests">
-      <div class="interest">
-        <i class="fas fa-pen-nib"></i>
+  <section id="interests" class="section">
+    <div class="section-header fade-up">
+      <h2 class="section-title">Beyond Code</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="interests-grid">
+      <div class="interest-card glass-card fade-up">
+        <div class="interest-icon-wrapper">
+          <i class="fas fa-pen-nib"></i>
+        </div>
         <h3>Writing</h3>
         <p>
           I write action-oriented military fiction, blending strategy,
@@ -113,8 +188,10 @@
         </p>
       </div>
 
-      <div class="interest">
-        <i class="fas fa-car"></i>
+      <div class="interest-card glass-card fade-up" style="transition-delay: 0.1s;">
+        <div class="interest-icon-wrapper">
+          <i class="fas fa-car"></i>
+        </div>
         <h3>Motorsports</h3>
         <p>
           Passionate about engines, performance engineering,
@@ -125,22 +202,31 @@
   </section>
 
   <!-- ===== Contact ===== -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Let’s build or discuss something meaningful.</p>
-
-    <div class="contact-links">
-      <a href="mailto:prakharkashyap2607@gmail.com">
-        <i class="fas fa-envelope"></i> Email
-      </a>
-      <a target="_blank" href="https://github.com/prakharkashyap26">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/in/prakhar-kashyap-4832a0333">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
+  <section id="contact" class="section">
+    <div class="contact-container glass-card fade-up">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-subtitle">Let’s build or discuss something meaningful.</p>
+      
+      <div class="contact-links-grid">
+        <a href="mailto:prakharkashyap2607@gmail.com" class="contact-btn">
+          <i class="fas fa-envelope"></i>
+          <span>Email Me</span>
+        </a>
+        <a target="_blank" href="https://github.com/prakharkashyap26" class="contact-btn">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/prakhar-kashyap-4832a0333" class="contact-btn">
+          <i class="fab fa-linkedin-in"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
     </div>
   </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Prakhar Kashyap. Built with passion.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
