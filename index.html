@@ -4,228 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prakhar Kashyap | Portfolio</title>
-  <meta name="description" content="Portfolio of Prakhar Kashyap, Computer Science Undergraduate and Backend Developer.">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&family=Fira+Code&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/2d3f2e6a22.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Background Orbs -->
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-  <div class="bg-orb orb-3"></div>
+<nav id="navbar">
+  <div class="nav-container">
+    <div class="logo">Prakhar<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <!-- ===== Navbar ===== -->
-  <nav id="navbar">
-    <div class="nav-container">
-      <div class="logo">Prakhar<span class="accent">.</span></div>
-      <button class="theme-toggle" aria-label="Toggle dark mode">
-        <i class="fas fa-moon"></i>
-      </button>
-      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<section id="hero">
+  <div class="hero-content">
 
-  <!-- ===== Hero ===== -->
-  <section id="hero" class="section">
-    <div class="hero-content fade-up">
-      <div class="hero-text">
-        <div class="greeting">Hello, I am</div>
-        <h1>Prakhar Kashyap</h1>
-        <p>
-          I build reliable backend systems, write thoughtful stories,
-          and enjoy engineering things that last. Focused on clarity, precision, and performance.
-        </p>
-        <div class="hero-btns">
-          <a href="#contact" class="btn primary-btn">Get in Touch <i class="fas fa-arrow-right"></i></a>
-          <a href="#projects" class="btn secondary-btn">View Work</a>
-        </div>
-      </div>
-      <div class="hero-image-wrapper">
-        <div class="hero-image-container">
-          <img src="prakhar.jpg" alt="Prakhar Kashyap" class="hero-image">
-          <div class="image-glow"></div>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <a href="#about"><i class="fas fa-chevron-down"></i></a>
-    </div>
-  </section>
+    <div class="hero-text">
+      <div class="greeting">Hello, I am</div>
+      <h1>Prakhar Kashyap</h1>
 
-  <!-- ===== About ===== -->
-  <section id="about" class="section">
-    <div class="section-header fade-up">
-      <h2 class="section-title">About Me</h2>
-      <div class="divider"></div>
-    </div>
-    <div class="about-content fade-up">
-      <div class="about-text glass-card">
-        <p>
-          I am an engineering student focused on backend development and
-          system-level programming. My journey started early with Python,
-          driven by curiosity and experimentation on a shared family computer.
-        </p>
-        <p>
-          Today, I aim to build scalable software that solves real problems
-          with clarity and precision. I believe in writing code that is not just functional, but clean, maintainable, and highly performant.
-        </p>
-      </div>
-    </div>
-  </section>
+      <p>
+        I build backend systems with care — designed to be clear,
+        stable, and easy to maintain over time.
+        I prefer doing things properly rather than quickly.
+      </p>
 
-  <!-- ===== Projects ===== -->
-  <section id="projects" class="section">
-    <div class="section-header fade-up">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="divider"></div>
-    </div>
-    <div class="projects-grid">
-      <div class="project-card glass-card fade-up">
-        <div class="project-icon"><i class="fas fa-robot"></i></div>
-        <h3>Prep-Buddy</h3>
-        <p class="project-desc">
-          An AI-powered study assistant written in Python. Helps students
-          discover quality courses, practice regularly, and receive guided
-          AI feedback in a clean workflow.
-        </p>
-        <div class="project-tech">
-          <span>Python</span>
-          <span>AI</span>
-        </div>
-        <div class="project-links">
-          <a target="_blank" href="https://github.com/prakharkashyap26/Prep_Buddy" class="project-link">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
+      <div class="hero-btns">
+        <a href="#contact" class="btn primary">Contact</a>
+        <a href="#projects" class="btn secondary">View Work</a>
       </div>
 
-      <div class="project-card glass-card fade-up" style="transition-delay: 0.1s;">
-        <div class="project-icon"><i class="fas fa-search"></i></div>
-        <h3>TexWebSearch</h3>
-        <p class="project-desc">
-          A lightweight CLI-based AI search engine using Google Gemini,
-          optimized for low-end systems with a focus on speed and clarity.
-        </p>
-        <div class="project-tech">
-          <span>CLI</span>
-          <span>Google Gemini</span>
-        </div>
-        <div class="project-links">
-          <a target="_blank" href="https://github.com/prakharkashyap26/textWebSearch" class="project-link">
-            <i class="fab fa-github"></i> Source
-          </a>
-        </div>
+      <div class="personal-note">
+        • I take my time with details
       </div>
     </div>
-  </section>
 
-  <!-- ===== Skills ===== -->
-  <section id="skills" class="section">
-    <div class="section-header fade-up">
-      <h2 class="section-title">Technical Arsenal</h2>
-      <div class="divider"></div>
+    <div class="hero-image-container">
+      <img src="prakhar.jpg" alt="Prakhar">
     </div>
-    <div class="skills-container glass-card fade-up">
-      <div class="skills-grid skills-grid-3x2">
-        <div class="skill-item">
-          <i class="fab fa-python"></i>
-          <span>Python</span>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-java"></i>
-          <span>Java</span>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-linux"></i>
-          <span>Linux</span>
-        </div>
-        <div class="skill-item">
-          <i class="fab fa-git-alt"></i>
-          <span>Git</span>
-        </div>
-        <div class="skill-item">
-          <i class="fas fa-database"></i>
-          <span>MySQL</span>
-        </div>
-      </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Selected Work</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>Prep-Buddy</h3>
+      <p>
+        A study assistant that helps students discover resources
+        and stay consistent through structured guidance.
+      </p>
+      <a href="https://github.com/prakharkashyap26/Prep_Buddy" target="_blank">GitHub →</a>
     </div>
-  </section>
 
-  <!-- ===== Interests ===== -->
-  <section id="interests" class="section">
-    <div class="section-header fade-up">
-      <h2 class="section-title">Beyond Code</h2>
-      <div class="divider"></div>
+    <div class="card">
+      <h3>TexWebSearch</h3>
+      <p>
+        A lightweight CLI-based search tool focused on speed,
+        clarity, and minimal resource usage.
+      </p>
+      <a href="https://github.com/prakharkashyap26/textWebSearch" target="_blank">GitHub →</a>
     </div>
-    <div class="interests-grid">
-      <div class="interest-card glass-card fade-up">
-        <div class="interest-icon-wrapper">
-          <i class="fas fa-pen-nib"></i>
-        </div>
-        <h3>Writing</h3>
-        <p>
-          I write action-oriented military fiction, blending strategy,
-          discipline, and narrative tension.
-        </p>
-      </div>
 
-      <div class="interest-card glass-card fade-up" style="transition-delay: 0.1s;">
-        <div class="interest-icon-wrapper">
-          <i class="fas fa-car"></i>
-        </div>
-        <h3>Motorsports</h3>
-        <p>
-          Passionate about engines, performance engineering,
-          and the mechanical beauty of racing.
-        </p>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== Contact ===== -->
-  <section id="contact" class="section">
-    <div class="contact-container glass-card fade-up">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="contact-subtitle">Let’s build or discuss something meaningful.</p>
-      
-      <div class="contact-links-grid">
-        <a href="mailto:prakharkashyap2607@gmail.com" class="contact-btn">
-          <i class="fas fa-envelope"></i>
-          <span>Email Me</span>
-        </a>
-        <a target="_blank" href="https://github.com/prakharkashyap26" class="contact-btn">
-          <i class="fab fa-github"></i>
-          <span>GitHub</span>
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/prakhar-kashyap-4832a0333" class="contact-btn">
-          <i class="fab fa-linkedin-in"></i>
-          <span>LinkedIn</span>
-        </a>
-      </div>
-    </div>
-  </section>
+<section id="about">
+  <h2>About</h2>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Prakhar Kashyap. Built with passion.</p>
-  </footer>
+  <p>
+    I started with Python out of curiosity and kept going because I liked
+    understanding how things work under the surface.
+  </p>
 
-  <script src="script.js"></script>
+  <p>
+    Over time, that turned into a focus on backend systems —
+    writing code that is structured, predictable, and easy to reason about.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-links">
+    <a href="mailto:prakharkashyap2607@gmail.com">Email</a>
+    <a href="https://github.com/prakharkashyap26" target="_blank">GitHub</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <p>Built carefully. No shortcuts.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
